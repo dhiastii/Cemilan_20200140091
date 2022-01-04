@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hasil Data Pembelian</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <div>Data Pembelian</div>
+    <hr>
+    <table border="1"> 
+    
+        <th>Nama Sayur</th>
+        <th>Harga per Kg (Rp)</th>
+            <th>Jumlah (Kg)</th>
+            <th>Harga Awal (Rp)</th>
+            <th>Diskon (%)</th>
+            <th>Harga Diskon (Rp)</th>
+            <th>Total Pembayaran (Rp)</th>
+            <th>Jumlah Uang yang Dimasukkan (Rp)</th>
+        <tr>
+        <td th:text="${nama}"></td>
+        <td th:text="${harga}"></td>
+        <td th:text="${jumlahbeli}"></td>
+        <td th:text="${jumlahawal}"></td>
+        <td th:text="${ddiskon}"></td>
+        <td th:text="${jumlahdiskon}"></td>
+        <td th:text="${totalbayar}"></td>
+        <td th:text="${uangcust}"></td>
+    </tr>
+    </table>
+    <br> 
+  
+
+     <th>Keterangan Uang Customer</th>
+
+    <br>
+        <td th:text="${kembalian}"></td>
+</body>
+</html>
